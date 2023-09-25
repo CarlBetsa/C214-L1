@@ -4,12 +4,6 @@ class Tarefas{
     this.descricao = descricao;
     this.status = status;
   }
-
-  mostraInfo(){
-    console.log(`Titulo: ${this.titulo}`);
-    console.log(`Descricao: ${this.descricao}`);
-    console.log(`Status: ${this.status}`);
-  }
 }
 
 class GerenciadorTarefas{
@@ -37,7 +31,6 @@ class GerenciadorTarefas{
   exibeTarefas(){
     if (this.listaDeTarefa.length === 0) {
       console.log("Nenhuma tarefa encontrada");
-      return -1;
     } else {
       this.listaDeTarefa.forEach((tarefa) => {
         console.log(`\nTitulo: ${tarefa.titulo}`);

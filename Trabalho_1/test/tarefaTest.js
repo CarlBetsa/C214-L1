@@ -55,7 +55,6 @@ describe('Testes da Lista', () => {
     GerenciadorTarefas.exibeTarefas();
 
     chai.expect(consoleSpy.getCall(0).args[0]).to.include('Nenhuma tarefa encontrada');
-
   });
 
   //testes para atualizar o status de uma tarefa
