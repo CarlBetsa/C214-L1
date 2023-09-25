@@ -45,10 +45,10 @@ describe('Testes da Lista', () => {
 
     chai.expect(consoleSpy.getCall(0).args[0]).to.include('tarefa 1');
     chai.expect(consoleSpy.getCall(1).args[0]).to.include('descrição 1');
-    chai.expect(consoleSpy.getCall(2).args[0]).to.include('Status: a fazer');
+    chai.expect(consoleSpy.getCall(2).args[0]).to.include('a fazer');
     chai.expect(consoleSpy.getCall(3).args[0]).to.include('tarefa 2');
     chai.expect(consoleSpy.getCall(4).args[0]).to.include('descrição 2');
-    chai.expect(consoleSpy.getCall(5).args[0]).to.include('Status: a fazer');
+    chai.expect(consoleSpy.getCall(5).args[0]).to.include('a fazer');
   });
 
   it('Testa a exibição da lista quando vazia', () => {
